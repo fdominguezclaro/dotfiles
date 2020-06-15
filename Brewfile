@@ -1,4 +1,5 @@
 tap 'nodenv/nodenv'
+tap 'heroku/brew'
 
 brew 'heroku'
 brew 'imagemagick'
