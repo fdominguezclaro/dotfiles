@@ -10,8 +10,9 @@ zplug "zsh-users/zsh-history-substring-search", defer:3, on:"zsh-users/zsh-synta
 
 # Supports oh-my-zsh plugins and the like
 zplug "plugins/git",   from:oh-my-zsh
+zplug "plugins/rails",   from:oh-my-zsh
 
-zplug 'dracula/zsh', as:theme
+zplug "bhilburn/powerlevel9k", use:powerlevel9k.zsh-theme
 
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
@@ -23,9 +24,10 @@ fi
 # Then, source plugins and add commands to $PATH
 zplug load
 
-# Init rbenv and nodenv
+# Init rbenv, nodenv and pyenv
 eval "$(rbenv init -)"
 eval "$(nodenv init -)"
+eval "$(pyenv init -)"
 
 # mkdir .git/safe in the root of repositories you trust
 export PATH=".git/safe/../../bin:$PATH"

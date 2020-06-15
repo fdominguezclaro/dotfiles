@@ -1,0 +1,23 @@
+
+# Editing tools and IDEs #
+[._]*.sw[a-p]
+[._]*.s[a-v][a-z]
+*~
+~*
+\#*\#
+\.#*
+.ipynb_checkpoints/
+.vscode/
+**/.idea/
+.idea/
+
+# OS generated files #
+Icon
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db

@@ -1,6 +1,6 @@
 [user]
-	name = Jaime Bünzli
-	email = jpbunzli@gmail.com
+	name = Felipe Dominguez
+	email = fdominguezc@uc.cl
 
 [credential]
 	helper = osxkeychain
@@ -54,4 +54,4 @@
   modified = red
 
 [github]
-	user = bunzli
+	user = fdominguezclaro

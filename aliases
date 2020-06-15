@@ -1,29 +1,35 @@
 # Unix
 alias tlf="tail -f"
-alias ln='ln -v'
-alias mkdir='mkdir -p'
-alias ...='../..'
-alias l='ls'
 alias ll='ls -al'
 alias lh='ls -Alh'
 alias -g G='| grep'
 alias -g M='| less'
 alias -g L='| wc -l'
-alias -g ONE="| awk '{ print \$1}'"
 alias e="$EDITOR"
 alias v="$VISUAL"
+
+## Easier navigation
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
 
 # Bundler
 alias b="bundle"
 
-# Tests and Specs
-alias t="ruby -I test"
-
 # Rails
-alias migrate="rake db:migrate db:rollback && rake db:migrate"
-alias m="migrate"
-alias rk="rake"
-alias s="rspec"
+alias ber="bundle exec rspec"
+alias beg="bundle exec guard"
+alias bem="bundle exec rails db:migrate"
+alias bes="bundle exec rails server"
+
+alias sr="spring rspec"
+alias srs="spring rails server"
+alias src="spring rails console"
+
+# Paths shortcuts
+alias uni="cd ~/Google\ Drive/U/"
+alias pla="cd ~/Platanus"
 
 # Pretty print the path
 alias path="echo $PATH | tr -s ':' '\n'"

@@ -1,3 +1,5 @@
+skip_global_compinit=1
+
 # use vim as the visual editor
 export VISUAL=vim
 export EDITOR=$VISUAL
