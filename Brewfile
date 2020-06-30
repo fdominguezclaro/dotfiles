@@ -12,6 +12,7 @@ brew 'rbenv-aliases'
 brew 'rbenv-vars'
 brew 'rbenv'
 brew 'ruby-build'
+brew 'testssl'
 brew 'yarn'
 brew 'zplug'
 
