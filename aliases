@@ -7,6 +7,7 @@ alias -g M='| less'
 alias -g L='| wc -l'
 alias e="$EDITOR"
 alias v="$VISUAL"
+alias help="tldr"
 
 ## Easier navigation
 alias ..="cd .."
@@ -34,4 +35,5 @@ alias pla="cd ~/Platanus"
 # Pretty print the path
 alias path="echo $PATH | tr -s ':' '\n'"
 
-# eval $(hub alias -s)
+# Other aliases
+eval $(thefuck --alias)
