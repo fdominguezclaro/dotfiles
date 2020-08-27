@@ -31,9 +31,13 @@
 [core]
   excludesfile = ~/.gitignore
   autocrlf = input
+	editor = code --wait
 
 [push]
   default = upstream
+
+[pull]
+  ff = only
 
 [color]
   ui = auto
