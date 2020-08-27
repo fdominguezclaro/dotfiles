@@ -23,7 +23,6 @@ alias ber="bundle exec rspec"
 alias beg="bundle exec guard"
 alias bem="bundle exec rails db:migrate"
 alias bes="bundle exec rails server"
-
 alias sr="spring rspec"
 alias srs="spring rails server"
 alias src="spring rails console"
@@ -34,6 +33,10 @@ alias pla="cd ~/Platanus"
 
 # Pretty print the path
 alias path="echo $PATH | tr -s ':' '\n'"
+
+# Git
+alias gfix="git commit --fixup "
+alias grauto="git rebase -i --autosquash master"
 
 # Other aliases
 eval $(thefuck --alias)
