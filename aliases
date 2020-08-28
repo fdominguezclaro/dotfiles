@@ -38,5 +38,10 @@ alias path="echo $PATH | tr -s ':' '\n'"
 alias gfix="git commit --fixup "
 alias grauto="git rebase -i --autosquash master"
 
+# switchaudio
+alias samb="SwitchAudioSource -s 'MacBook Pro Speakers'"
+alias saap="SwitchAudioSource -s 'FDOM AirPods Pro'"
+alias satv="SwitchAudioSource -s 'SAMSUNG'"
+
 # Other aliases
 eval $(thefuck --alias)
