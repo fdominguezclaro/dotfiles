@@ -5,6 +5,7 @@ tap 'thoughtbot/formulae'
 
 brew 'git'
 brew 'heroku'
+brew 'imagemagick'
 brew 'node-build'
 brew 'nodenv-aliases'
 brew 'nodenv-vars'
