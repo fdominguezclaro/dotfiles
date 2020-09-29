@@ -42,6 +42,10 @@ alias grauto="git rebase -i --autosquash master"
 alias samb="SwitchAudioSource -s 'MacBook Pro Speakers'"
 alias saap="SwitchAudioSource -s 'FDOM AirPods Pro'"
 alias satv="SwitchAudioSource -s 'SAMSUNG'"
+alias sawh="SwitchAudioSource -s 'WH-1000XM2'"
+
+# Heroku
+alias hkas="heroku accounts:set"
 
 # Other aliases
 eval $(thefuck --alias)
