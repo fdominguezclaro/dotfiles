@@ -9,11 +9,14 @@ alias e="$EDITOR"
 alias v="$VISUAL"
 alias help="tldr"
 
-## Easier navigation
+# Easier navigation
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
+
+# Usefull commands
+alias hg='history | grep'
 
 # Bundler
 alias b="bundle"

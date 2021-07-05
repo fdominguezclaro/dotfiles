@@ -3,6 +3,7 @@ tap 'heroku/brew'
 tap 'nodenv/nodenv'
 tap 'thoughtbot/formulae'
 
+brew 'gh'
 brew 'git'
 brew 'heroku'
 brew 'imagemagick'

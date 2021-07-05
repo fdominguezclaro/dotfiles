@@ -16,7 +16,7 @@ zplug romkatv/powerlevel10k, as:theme, depth:1
 zplug "zsh-users/zsh-completions",              defer:0
 zplug "zsh-users/zsh-autosuggestions",          defer:2, on:"zsh-users/zsh-completions"
 zplug "zsh-users/zsh-syntax-highlighting",      defer:3, on:"zsh-users/zsh-autosuggestions"
-zplug "zsh-users/zsh-history-substring-search", defer:3, on:"zsh-users/zsh-syntax-highlighting"
+zplug "zsh-users/zsh-history-substring-search", defer:4, on:"zsh-users/zsh-syntax-highlighting"
 
 # Supports oh-my-zsh plugins and the like
 zplug "plugins/git",   from:oh-my-zsh
@@ -41,6 +41,9 @@ export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/
 
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
+
+# bindings
+[[ -f ~/.bindings ]] && source ~/.bindings
 
 # History settings
 HISTFILE=~/.zhistory
@@ -82,3 +85,8 @@ bindkey '^[[B' history-substring-search-down
 eval "$(rbenv init -)"
 eval "$(nodenv init -)"
 eval "$(pyenv init -)"
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/fdom/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/fdom/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/fdom/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/fdom/google-cloud-sdk/completion.zsh.inc'; fi
